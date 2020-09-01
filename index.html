@@ -3,5 +3,18 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Recherche d'intervention</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
 </head>
+<body>
+	<?php include('php/connection_bdd.php');?>
+	<form method='post'>
+		<input type='text' placeholder='Rechercher' name="recherche_valeur"/>
+		<input type='submit' value="Rechercher"/>
+	</form>
+	<table>
+		<thead>
+			<tr><th>Prenom</th><th>Nombre intervention</th><th>Interventions effectuees</th></tr>
+		</thead>
+	</table>
+</body>
 </html>
