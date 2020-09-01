@@ -1,0 +1,5 @@
+table
+	{width:100%;border-collapse:collapse}
+	table tr, table th, table td{border:1px solid black;}
+	table tr td{text-align:center;padding:1em;}
+
