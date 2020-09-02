@@ -6,17 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
 </head>
 <body>
-	<?php include('php/connexion_bdd.php');?>
-	<form method='post'>
-		<input type='text' placeholder='Rechercher' name="recherche_valeur"/>
+	<form method='post' action="php/recherche.php">
+		<input type='text' placeholder='Rechercher' name="prenom"/>
 		<input type='submit' value="Rechercher"/>
 	</form>
-	<table>
+	<?php include('php/recherche.php');?>
+	<!--<table>
 		<thead>
-			<tr><th>Prenom</th><th>Nombre intervention</th><th>Interventions effectuees</th></tr>
+			<tr><th>Prenom</th><th>Dates d'interventions</th><th>Motifs interventions</th></tr>
 		</thead>
 		<tbody>
 		</tbody>
 	</table>
-</body>
+</body>-->
 </html>
